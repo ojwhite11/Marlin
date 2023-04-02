@@ -843,7 +843,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 200
+#define EXTRUDE_MAXLENGTH 220
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -888,11 +888,11 @@
 //#define BELTPRINTER
 
 // Enable for Polargraph Kinematics
-#define POLARGRAPH
+//#define POLARGRAPH
 #if ENABLED(POLARGRAPH)
   #define POLARGRAPH_MAX_BELT_LEN  1035.0 // (mm) Belt length at full extension. Override with M665 H.
   #define DEFAULT_SEGMENTS_PER_SECOND 5   // Move segmentation based on duration
-  #define PEN_UP_DOWN_MENU                // Add "Pen Up" and "Pen Down" to the MarlinUI menu
+//#define PEN_UP_DOWN_MENU                // Add "Pen Up" and "Pen Down" to the MarlinUI menu
 #endif
 
 // @section delta
@@ -1284,7 +1284,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-//#define CLASSIC_JERK
+#define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
   #define DEFAULT_XJERK 10.0
   #define DEFAULT_YJERK 10.0
